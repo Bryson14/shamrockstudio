@@ -1,0 +1,15 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-shamrockstudio-dev-163903-authRole",
+      "UnauthRoleArn": "arn:aws:iam::703791825883:role/amplify-shamrockstudio-dev-163903-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::703791825883:role/amplify-shamrockstudio-dev-163903-authRole",
+      "Region": "us-east-2",
+      "DeploymentBucketName": "amplify-shamrockstudio-dev-163903-deployment",
+      "UnauthRoleName": "amplify-shamrockstudio-dev-163903-unauthRole",
+      "StackName": "amplify-shamrockstudio-dev-163903",
+      "StackId": "arn:aws:cloudformation:us-east-2:703791825883:stack/amplify-shamrockstudio-dev-163903/17f33c80-46ac-11ee-a240-0a2ff48ddfb3",
+      "AmplifyAppId": "d1dea8mnmh7lsw"
+    }
+  }
+}
