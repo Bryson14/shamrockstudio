@@ -1,43 +1,36 @@
+// sections each in their own div and with creative catchy headers with some paragraph text
+// header, intro to shamrock studio
+// features list including web app with custom websites, aws cloud, ai, more standard websites with CMS
+// how it works - consulting, maintentnace, support
+// benefits - expertise, collaboration, efficiency, support
+// logo section - trusted by companies
+// testimonials - client stories
+// CTA - contact us, learn more
+
 import Head from "next/head";
-import Image from "next/image";
-import { Inter } from "next/font/google";
-import styles from "@/styles/Home.module.css";
+import Link from "next/link";
 
-const inter = Inter({ subsets: ["latin"] });
-
-export default function Home() {
+export default function Services() {
   return (
     <>
       <Head>
-        <title>Shamrock Studio</title>
-        <meta
-          name="description"
-          content="Elevate your business with a one of kind websites and ML"
-        />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <title>Services</title>
+        <meta name="description" content="Services at Shamrock" />
       </Head>
-      <main className={`${styles.main} ${inter.className}`}>
-        <div style={{ minHeight: "40vh" }}>
-          <h1>Features List</h1>
+      <main>
+        <div>
+          <h1>Services</h1>
           <p>Web app development</p>
           <p>Professional website development</p>
           <p>cutting edge technology on AWS Cloud</p>
         </div>
-        <div style={{ minHeight: "40vh" }}>
-          <h1>Hero Unlock your digital potential</h1>
-          <p>
-            we are a website studio specializing in web apps, website
-            development, AWS cloud, and AI
-          </p>
-        </div>
-        <div style={{ minHeight: "40vh" }}>
+        <div>
           <h2>How it works: From consultation to launch</h2>
           <p>expertise and collaboration, building your vision</p>
           <p>efficient development, Deliver high quality solutions</p>
           <p>continuous support, post-launch maintenance and updates</p>
         </div>
-        <div style={{ minHeight: "40vh" }}>
+        <div>
           <h3>Benefits: Unlocking your software potential at your business</h3>
           <p>expertise with us</p>
           <p> collaboration</p>
@@ -55,16 +48,18 @@ export default function Home() {
             height={75}
           />
         </div>
-        <div style={{ minHeight: "40vh" }}>
+        <div>
           <h2>Testimonials: Client Stories</h2>
           <p>they were so great, TMT</p>
           <p>help my business, Sublime</p>
         </div>
-        <div style={{ minHeight: "40vh" }}>
+        <div>
           <h2>Transform you ideas into reality</h2>
           <p>contact us</p>
           <button>contact us</button>
-          <button>learn more</button>
+          <Link href="projects">
+            <button>learn more</button>
+          </Link>
         </div>
       </main>
     </>
