@@ -56,7 +56,9 @@ export default function Services() {
         <div>
           <h2>Transform you ideas into reality</h2>
           <p>contact us</p>
-          <button>contact us</button>
+          <Link href="/contact">
+            <button>contact us</button>
+          </Link>
           <Link href="projects">
             <button>learn more</button>
           </Link>

@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
 import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
 
@@ -62,7 +63,9 @@ export default function Home() {
         </div>
         <div style={{ minHeight: "40vh" }}>
           <h2>Transform you ideas into reality</h2>
-          <p>contact us</p>
+          <Link href="/contact">
+            <p>contact us</p>
+          </Link>
           <button>contact us</button>
           <button>learn more</button>
         </div>
