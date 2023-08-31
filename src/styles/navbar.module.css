@@ -1,0 +1,44 @@
+/* HamburgerMenu.css */
+.menuIcon {
+  display: inline-block;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.bar,
+.closeBar {
+  margin: 3px;
+  width: 25px;
+  height: 3px;
+  background: #000;
+  border-radius: 1.5px;
+
+  transition: margin 0.2s, transform 0.2s;
+
+  /* same as above but with prefixes added */
+  -webkit-transition: margin 0.2s, -webkit-transform 0.2s;
+  transition: margin 0.2s, -webkit-transform 0.2s;
+  -o-transition: margin 0.2s, transform 0.2s;
+  transition: margin 0.2s, transform 0.2s;
+  transition: margin 0.2s, transform 0.2s, -webkit-transform 0.2s;
+}
+
+.closeBar:hover {
+  margin: 5px 3px;
+}
+
+.closeBar:first-child {
+  -webkit-transform: translateY(6px) rotate(45deg);
+  -ms-transform: translateY(6px) rotate(45deg);
+  transform: translateY(6px) rotate(45deg);
+}
+
+.closeBar:nth-child(2) {
+  opacity: 0;
+}
+
+.closeBar:last-child {
+  -webkit-transform: translateY(-6px) rotate(-45deg);
+  -ms-transform: translateY(-6px) rotate(-45deg);
+  transform: translateY(-6px) rotate(-45deg);
+}

@@ -1,15 +1,16 @@
-import MainHeader from "./header";
+import MainNavbar from "./navbar";
+import MobileNavbar from "./navbarMobile";
+import { useBreakpointValue } from "@aws-amplify/ui-react";
 
 export default function HomeLayout({
   children, // will be a page or nested layout
 }: {
   children: React.ReactNode;
 }) {
+  const isMobile = useBreakpointValue({ base: true, medium: false });
   return (
     <section>
-      {/* Include shared UI here e.g. a header or sidebar */}
-      <MainHeader />
-      <nav></nav>
+      {isMobile ? <MobileNavbar /> : <MainNavbar />}
 
       {children}
     </section>
