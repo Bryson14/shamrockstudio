@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=OpenSans:400,600,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=OpenSans:400,500,600,700&display=swap");
 /* :root {
   --max-width: 1100px;
   --border-radius: 12px;
@@ -98,6 +98,6 @@ a {
   }
 }
 
-.openSans {
+.open-sans {
   font-family: "Open Sans", sans-serif;
 }
