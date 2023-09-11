@@ -3,11 +3,11 @@ import styles from "@/styles/navbar.module.css";
 import Link from "next/link";
 
 interface MenuProps {
-  setMenuIsOpen?: (isOpen: boolean) => void;
+  handleMenuClick?: (open: boolean) => void;
   size?: "small" | "medium" | "large";
 }
 
-function HamburgerMenu({ setMenuIsOpen, size }: MenuProps) {
+export default function HamburgerMenu({ handleMenuClick, size }: MenuProps) {
   const [isOpen, setIsOpen] = useState(false);
 
   const handleClick = () => {
@@ -15,7 +15,7 @@ function HamburgerMenu({ setMenuIsOpen, size }: MenuProps) {
     if (icon) icon.classList.toggle(styles.close);
 
     setIsOpen(!isOpen);
-    if (setMenuIsOpen) setMenuIsOpen(!isOpen);
+    if (handleMenuClick) handleMenuClick(!isOpen);
   };
 
   // if size is undefined or medium, set width and height to 45px, small set to 30px, large set to 60px
@@ -34,5 +34,3 @@ function HamburgerMenu({ setMenuIsOpen, size }: MenuProps) {
     </Link>
   );
 }
-
-export default HamburgerMenu;

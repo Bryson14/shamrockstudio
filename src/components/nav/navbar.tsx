@@ -19,19 +19,19 @@ export default function MainNavbar() {
             height={80}
           />
           <span>
-            <h1>Shamrock</h1>
-            <h2>Cloud Studio</h2>
+            <h1 className="roboto">Shamrock</h1>
+            <h2 className="open-sans">Cloud Studio</h2>
           </span>
         </div>
       </Link>
-      <nav>
+      <nav className={styles.navlinksContainer}>
         <ul className={styles.navlinks}>
           <li>
             <Link
-              href="/about"
+              href="/company"
               className={`open-sans ${path === "about" ? styles.selected : ""}`}
             >
-              About
+              Company
             </Link>
           </li>
           <li>

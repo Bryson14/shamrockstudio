@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
 import CodeBlock from "@/components/codeBlock";
+import { Button, Flex } from "@aws-amplify/ui-react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,12 +19,19 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      {/* inter.className is a css class name for the font */}
+      <Flex direction={"row"}>
+        <Button variation="primary">Learn 1</Button>
+        <Button variation="destructive">Learn 2</Button>
+        <Button variation="warning">Learn 3</Button>
+      </Flex>
       <main className={`${styles.main} ${inter.className}`}>
         <div style={{ minHeight: "40vh" }}>
           <h1>Features List</h1>
           <p>Web app development</p>
           <p>Professional website development</p>
           <p>cutting edge technology on AWS Cloud</p>
+          <Button variation="primary">Learn More</Button>
         </div>
         <div style={{ minHeight: "40vh" }}>
           <h1>Hero Unlock your digital potential</h1>

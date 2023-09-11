@@ -1,5 +1,5 @@
-import MainNavbar from "./navbar";
-import MobileNavbar from "./navbarMobile";
+import MainNavbar from "../nav/navbar";
+import MobileNavbar from "../nav/navbarMobile";
 import { useBreakpointValue } from "@aws-amplify/ui-react";
 import styles from "@/styles/Home.module.css";
 

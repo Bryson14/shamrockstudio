@@ -1,12 +1,12 @@
 import Head from "next/head";
 import Link from "next/link";
 
-export default function About() {
+export default function Company() {
   return (
     <>
       <Head>
-        <title>About</title>
-        <meta name="description" content="About Page" />
+        <title>Company</title>
+        <meta name="description" content="Compnay Information Page" />
       </Head>
       <main>
         <div>
